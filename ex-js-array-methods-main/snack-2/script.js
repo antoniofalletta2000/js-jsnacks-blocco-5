@@ -7,12 +7,12 @@ const people = [
 // Stampa in console tutti i nomi
 // Risultato: 'Paolo', 'Giulia', 'Marco'
 
-let nomi=[]
 
-people.forEach(persona=>{
-  if(persona.name==="Paolo"||persona.name==="Giulia"||persona.name==="Marco"){
-    nomi.push(persona.name)
-  }
-})
 
-console.log(nomi.join(" , "));
+const nomi= people.map(persona=>{
+  
+    return `"${persona.name}"`
+  
+}).join(" , ")
+
+console.log(nomi)
