@@ -3,7 +3,9 @@ const names = ['Edoardo', 'Simone', 'Francesco'];
 // Stampa in console tutti i nomi
 // Risultato: 'Edoardo', 'Simone', 'Francesco'
 
-    console.log(names.join(","));
+    /* console.log(names.join(",")); */
+    const nomi= names.map(nome=>`"${nome}"`).join(" , ")
+    console.log(nomi);
     
     
     
